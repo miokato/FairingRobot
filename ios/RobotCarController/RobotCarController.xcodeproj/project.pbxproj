@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A4FA92E1AEB05EC00CE9CE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA92D1AEB05EC00CE9CE0 /* main.m */; };
+		1A4FA9311AEB05EC00CE9CE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9301AEB05EC00CE9CE0 /* AppDelegate.m */; };
+		1A4FA9341AEB05EC00CE9CE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9331AEB05EC00CE9CE0 /* ViewController.m */; };
+		1A4FA9371AEB05EC00CE9CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FA9351AEB05EC00CE9CE0 /* Main.storyboard */; };
+		1A4FA9391AEB05EC00CE9CE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FA9381AEB05EC00CE9CE0 /* Images.xcassets */; };
+		1A4FA93C1AEB05EC00CE9CE0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4FA93A1AEB05EC00CE9CE0 /* LaunchScreen.xib */; };
+		1A4FA9481AEB05EC00CE9CE0 /* RobotCarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9471AEB05EC00CE9CE0 /* RobotCarControllerTests.m */; };
+		1A4FA9771AEB062200CE9CE0 /* CBPeripheral+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9541AEB062100CE9CE0 /* CBPeripheral+Konashi.m */; };
+		1A4FA9781AEB062200CE9CE0 /* CBService+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9561AEB062100CE9CE0 /* CBService+Konashi.m */; };
+		1A4FA9791AEB062200CE9CE0 /* CBUUID+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9581AEB062100CE9CE0 /* CBUUID+Konashi.m */; };
+		1A4FA97A1AEB062200CE9CE0 /* Konashi+ACDrive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA95B1AEB062100CE9CE0 /* Konashi+ACDrive.m */; };
+		1A4FA97B1AEB062200CE9CE0 /* Konashi+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA95D1AEB062100CE9CE0 /* Konashi+ADC.m */; };
+		1A4FA97C1AEB062200CE9CE0 /* Konashi+Grove.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA95F1AEB062100CE9CE0 /* Konashi+Grove.m */; };
+		1A4FA97D1AEB062200CE9CE0 /* Konashi+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9611AEB062100CE9CE0 /* Konashi+UI.m */; };
+		1A4FA97E1AEB062200CE9CE0 /* KNSKonashiPeripheralImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9691AEB062100CE9CE0 /* KNSKonashiPeripheralImpl.m */; };
+		1A4FA97F1AEB062200CE9CE0 /* KNSKoshianPeripheralImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA96B1AEB062100CE9CE0 /* KNSKoshianPeripheralImpl.m */; };
+		1A4FA9801AEB062200CE9CE0 /* KNSPeripheralBaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA96D1AEB062200CE9CE0 /* KNSPeripheralBaseImpl.m */; };
+		1A4FA9811AEB062200CE9CE0 /* KNSPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9711AEB062200CE9CE0 /* KNSPeripheral.m */; };
+		1A4FA9821AEB062200CE9CE0 /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9741AEB062200CE9CE0 /* Konashi.m */; };
+		1A4FA9831AEB062200CE9CE0 /* KonashiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FA9761AEB062200CE9CE0 /* KonashiUtils.m */; };
+		1A4FA9851AEB062F00CE9CE0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4FA9841AEB062F00CE9CE0 /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A4FA9421AEB05EC00CE9CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A4FA9201AEB05EC00CE9CE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A4FA9271AEB05EC00CE9CE0;
+			remoteInfo = RobotCarController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A4FA9281AEB05EC00CE9CE0 /* RobotCarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotCarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4FA92C1AEB05EC00CE9CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4FA92D1AEB05EC00CE9CE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A4FA92F1AEB05EC00CE9CE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A4FA9301AEB05EC00CE9CE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A4FA9321AEB05EC00CE9CE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1A4FA9331AEB05EC00CE9CE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1A4FA9361AEB05EC00CE9CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A4FA9381AEB05EC00CE9CE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A4FA93B1AEB05EC00CE9CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1A4FA9411AEB05EC00CE9CE0 /* RobotCarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotCarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4FA9461AEB05EC00CE9CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4FA9471AEB05EC00CE9CE0 /* RobotCarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RobotCarControllerTests.m; sourceTree = "<group>"; };
+		1A4FA9531AEB062100CE9CE0 /* CBPeripheral+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Konashi.h"; sourceTree = "<group>"; };
+		1A4FA9541AEB062100CE9CE0 /* CBPeripheral+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Konashi.m"; sourceTree = "<group>"; };
+		1A4FA9551AEB062100CE9CE0 /* CBService+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBService+Konashi.h"; sourceTree = "<group>"; };
+		1A4FA9561AEB062100CE9CE0 /* CBService+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBService+Konashi.m"; sourceTree = "<group>"; };
+		1A4FA9571AEB062100CE9CE0 /* CBUUID+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBUUID+Konashi.h"; sourceTree = "<group>"; };
+		1A4FA9581AEB062100CE9CE0 /* CBUUID+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBUUID+Konashi.m"; sourceTree = "<group>"; };
+		1A4FA95A1AEB062100CE9CE0 /* Konashi+ACDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+ACDrive.h"; sourceTree = "<group>"; };
+		1A4FA95B1AEB062100CE9CE0 /* Konashi+ACDrive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+ACDrive.m"; sourceTree = "<group>"; };
+		1A4FA95C1AEB062100CE9CE0 /* Konashi+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+ADC.h"; sourceTree = "<group>"; };
+		1A4FA95D1AEB062100CE9CE0 /* Konashi+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+ADC.m"; sourceTree = "<group>"; };
+		1A4FA95E1AEB062100CE9CE0 /* Konashi+Grove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+Grove.h"; sourceTree = "<group>"; };
+		1A4FA95F1AEB062100CE9CE0 /* Konashi+Grove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+Grove.m"; sourceTree = "<group>"; };
+		1A4FA9601AEB062100CE9CE0 /* Konashi+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+UI.h"; sourceTree = "<group>"; };
+		1A4FA9611AEB062100CE9CE0 /* Konashi+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+UI.m"; sourceTree = "<group>"; };
+		1A4FA9631AEB062100CE9CE0 /* KNSUUIDExtern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSUUIDExtern.h; sourceTree = "<group>"; };
+		1A4FA9641AEB062100CE9CE0 /* KonashiConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiConstant.h; sourceTree = "<group>"; };
+		1A4FA9651AEB062100CE9CE0 /* KonashiDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiDb.h; sourceTree = "<group>"; };
+		1A4FA9661AEB062100CE9CE0 /* KoshianDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoshianDb.h; sourceTree = "<group>"; };
+		1A4FA9681AEB062100CE9CE0 /* KNSKonashiPeripheralImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSKonashiPeripheralImpl.h; sourceTree = "<group>"; };
+		1A4FA9691AEB062100CE9CE0 /* KNSKonashiPeripheralImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSKonashiPeripheralImpl.m; sourceTree = "<group>"; };
+		1A4FA96A1AEB062100CE9CE0 /* KNSKoshianPeripheralImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSKoshianPeripheralImpl.h; sourceTree = "<group>"; };
+		1A4FA96B1AEB062100CE9CE0 /* KNSKoshianPeripheralImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSKoshianPeripheralImpl.m; sourceTree = "<group>"; };
+		1A4FA96C1AEB062100CE9CE0 /* KNSPeripheralBaseImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralBaseImpl.h; sourceTree = "<group>"; };
+		1A4FA96D1AEB062200CE9CE0 /* KNSPeripheralBaseImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSPeripheralBaseImpl.m; sourceTree = "<group>"; };
+		1A4FA96E1AEB062200CE9CE0 /* KNSPeripheralImplProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralImplProtocol.h; sourceTree = "<group>"; };
+		1A4FA96F1AEB062200CE9CE0 /* KNSPeripheralImpls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralImpls.h; sourceTree = "<group>"; };
+		1A4FA9701AEB062200CE9CE0 /* KNSPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheral.h; sourceTree = "<group>"; };
+		1A4FA9711AEB062200CE9CE0 /* KNSPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSPeripheral.m; sourceTree = "<group>"; };
+		1A4FA9721AEB062200CE9CE0 /* Konashi-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi-Prefix.pch"; sourceTree = "<group>"; };
+		1A4FA9731AEB062200CE9CE0 /* Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konashi.h; sourceTree = "<group>"; };
+		1A4FA9741AEB062200CE9CE0 /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Konashi.m; sourceTree = "<group>"; };
+		1A4FA9751AEB062200CE9CE0 /* KonashiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiUtils.h; sourceTree = "<group>"; };
+		1A4FA9761AEB062200CE9CE0 /* KonashiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonashiUtils.m; sourceTree = "<group>"; };
+		1A4FA9841AEB062F00CE9CE0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A4FA9251AEB05EC00CE9CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4FA9851AEB062F00CE9CE0 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A4FA93E1AEB05EC00CE9CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A4FA91F1AEB05EC00CE9CE0 = {
+			isa = PBXGroup;
+			children = (
+				1A4FA92A1AEB05EC00CE9CE0 /* RobotCarController */,
+				1A4FA9441AEB05EC00CE9CE0 /* RobotCarControllerTests */,
+				1A4FA9841AEB062F00CE9CE0 /* CoreBluetooth.framework */,
+				1A4FA9291AEB05EC00CE9CE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A4FA9291AEB05EC00CE9CE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FA9281AEB05EC00CE9CE0 /* RobotCarController.app */,
+				1A4FA9411AEB05EC00CE9CE0 /* RobotCarControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A4FA92A1AEB05EC00CE9CE0 /* RobotCarController */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FA9511AEB062100CE9CE0 /* Konashi */,
+				1A4FA92F1AEB05EC00CE9CE0 /* AppDelegate.h */,
+				1A4FA9301AEB05EC00CE9CE0 /* AppDelegate.m */,
+				1A4FA9321AEB05EC00CE9CE0 /* ViewController.h */,
+				1A4FA9331AEB05EC00CE9CE0 /* ViewController.m */,
+				1A4FA9351AEB05EC00CE9CE0 /* Main.storyboard */,
+				1A4FA9381AEB05EC00CE9CE0 /* Images.xcassets */,
+				1A4FA93A1AEB05EC00CE9CE0 /* LaunchScreen.xib */,
+				1A4FA92B1AEB05EC00CE9CE0 /* Supporting Files */,
+			);
+			path = RobotCarController;
+			sourceTree = "<group>";
+		};
+		1A4FA92B1AEB05EC00CE9CE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FA92C1AEB05EC00CE9CE0 /* Info.plist */,
+				1A4FA92D1AEB05EC00CE9CE0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A4FA9441AEB05EC00CE9CE0 /* RobotCarControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FA9471AEB05EC00CE9CE0 /* RobotCarControllerTests.m */,
+				1A4FA9451AEB05EC00CE9CE0 /* Supporting Files */,
+			);
+			path = RobotCarControllerTests;
+			sourceTree = "<group>";
+		};
+		1A4FA9451AEB05EC00CE9CE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FA9461AEB05EC00CE9CE0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A4FA9511AEB062100CE9CE0 /* Konashi */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FA9521AEB062100CE9CE0 /* Category */,
+				1A4FA9621AEB062100CE9CE0 /* Constant */,
+				1A4FA9671AEB062100CE9CE0 /* Impl */,
+				1A4FA9701AEB062200CE9CE0 /* KNSPeripheral.h */,
+				1A4FA9711AEB062200CE9CE0 /* KNSPeripheral.m */,
+				1A4FA9721AEB062200CE9CE0 /* Konashi-Prefix.pch */,
+				1A4FA9731AEB062200CE9CE0 /* Konashi.h */,
+				1A4FA9741AEB062200CE9CE0 /* Konashi.m */,
+				1A4FA9751AEB062200CE9CE0 /* KonashiUtils.h */,
+				1A4FA9761AEB062200CE9CE0 /* KonashiUtils.m */,
+			);
+			path = Konashi;
+			sourceTree = "<group>";
+		};
+		1A4FA9521AEB062100CE9CE0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FA9531AEB062100CE9CE0 /* CBPeripheral+Konashi.h */,
+				1A4FA9541AEB062100CE9CE0 /* CBPeripheral+Konashi.m */,
+				1A4FA9551AEB062100CE9CE0 /* CBService+Konashi.h */,
+				1A4FA9561AEB062100CE9CE0 /* CBService+Konashi.m */,
+				1A4FA9571AEB062100CE9CE0 /* CBUUID+Konashi.h */,
+				1A4FA9581AEB062100CE9CE0 /* CBUUID+Konashi.m */,
+				1A4FA9591AEB062100CE9CE0 /* Konashi */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1A4FA9591AEB062100CE9CE0 /* Konashi */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FA95A1AEB062100CE9CE0 /* Konashi+ACDrive.h */,
+				1A4FA95B1AEB062100CE9CE0 /* Konashi+ACDrive.m */,
+				1A4FA95C1AEB062100CE9CE0 /* Konashi+ADC.h */,
+				1A4FA95D1AEB062100CE9CE0 /* Konashi+ADC.m */,
+				1A4FA95E1AEB062100CE9CE0 /* Konashi+Grove.h */,
+				1A4FA95F1AEB062100CE9CE0 /* Konashi+Grove.m */,
+				1A4FA9601AEB062100CE9CE0 /* Konashi+UI.h */,
+				1A4FA9611AEB062100CE9CE0 /* Konashi+UI.m */,
+			);
+			path = Konashi;
+			sourceTree = "<group>";
+		};
+		1A4FA9621AEB062100CE9CE0 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FA9631AEB062100CE9CE0 /* KNSUUIDExtern.h */,
+				1A4FA9641AEB062100CE9CE0 /* KonashiConstant.h */,
+				1A4FA9651AEB062100CE9CE0 /* KonashiDb.h */,
+				1A4FA9661AEB062100CE9CE0 /* KoshianDb.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		1A4FA9671AEB062100CE9CE0 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FA9681AEB062100CE9CE0 /* KNSKonashiPeripheralImpl.h */,
+				1A4FA9691AEB062100CE9CE0 /* KNSKonashiPeripheralImpl.m */,
+				1A4FA96A1AEB062100CE9CE0 /* KNSKoshianPeripheralImpl.h */,
+				1A4FA96B1AEB062100CE9CE0 /* KNSKoshianPeripheralImpl.m */,
+				1A4FA96C1AEB062100CE9CE0 /* KNSPeripheralBaseImpl.h */,
+				1A4FA96D1AEB062200CE9CE0 /* KNSPeripheralBaseImpl.m */,
+				1A4FA96E1AEB062200CE9CE0 /* KNSPeripheralImplProtocol.h */,
+				1A4FA96F1AEB062200CE9CE0 /* KNSPeripheralImpls.h */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A4FA9271AEB05EC00CE9CE0 /* RobotCarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4FA94B1AEB05EC00CE9CE0 /* Build configuration list for PBXNativeTarget "RobotCarController" */;
+			buildPhases = (
+				1A4FA9241AEB05EC00CE9CE0 /* Sources */,
+				1A4FA9251AEB05EC00CE9CE0 /* Frameworks */,
+				1A4FA9261AEB05EC00CE9CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobotCarController;
+			productName = RobotCarController;
+			productReference = 1A4FA9281AEB05EC00CE9CE0 /* RobotCarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A4FA9401AEB05EC00CE9CE0 /* RobotCarControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4FA94E1AEB05EC00CE9CE0 /* Build configuration list for PBXNativeTarget "RobotCarControllerTests" */;
+			buildPhases = (
+				1A4FA93D1AEB05EC00CE9CE0 /* Sources */,
+				1A4FA93E1AEB05EC00CE9CE0 /* Frameworks */,
+				1A4FA93F1AEB05EC00CE9CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A4FA9431AEB05EC00CE9CE0 /* PBXTargetDependency */,
+			);
+			name = RobotCarControllerTests;
+			productName = RobotCarControllerTests;
+			productReference = 1A4FA9411AEB05EC00CE9CE0 /* RobotCarControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A4FA9201AEB05EC00CE9CE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = mio_k;
+				TargetAttributes = {
+					1A4FA9271AEB05EC00CE9CE0 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					1A4FA9401AEB05EC00CE9CE0 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 1A4FA9271AEB05EC00CE9CE0;
+					};
+				};
+			};
+			buildConfigurationList = 1A4FA9231AEB05EC00CE9CE0 /* Build configuration list for PBXProject "RobotCarController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A4FA91F1AEB05EC00CE9CE0;
+			productRefGroup = 1A4FA9291AEB05EC00CE9CE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A4FA9271AEB05EC00CE9CE0 /* RobotCarController */,
+				1A4FA9401AEB05EC00CE9CE0 /* RobotCarControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A4FA9261AEB05EC00CE9CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4FA9371AEB05EC00CE9CE0 /* Main.storyboard in Resources */,
+				1A4FA93C1AEB05EC00CE9CE0 /* LaunchScreen.xib in Resources */,
+				1A4FA9391AEB05EC00CE9CE0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A4FA93F1AEB05EC00CE9CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A4FA9241AEB05EC00CE9CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4FA9811AEB062200CE9CE0 /* KNSPeripheral.m in Sources */,
+				1A4FA97F1AEB062200CE9CE0 /* KNSKoshianPeripheralImpl.m in Sources */,
+				1A4FA97B1AEB062200CE9CE0 /* Konashi+ADC.m in Sources */,
+				1A4FA9341AEB05EC00CE9CE0 /* ViewController.m in Sources */,
+				1A4FA9311AEB05EC00CE9CE0 /* AppDelegate.m in Sources */,
+				1A4FA97E1AEB062200CE9CE0 /* KNSKonashiPeripheralImpl.m in Sources */,
+				1A4FA9771AEB062200CE9CE0 /* CBPeripheral+Konashi.m in Sources */,
+				1A4FA9831AEB062200CE9CE0 /* KonashiUtils.m in Sources */,
+				1A4FA97A1AEB062200CE9CE0 /* Konashi+ACDrive.m in Sources */,
+				1A4FA97D1AEB062200CE9CE0 /* Konashi+UI.m in Sources */,
+				1A4FA9781AEB062200CE9CE0 /* CBService+Konashi.m in Sources */,
+				1A4FA9801AEB062200CE9CE0 /* KNSPeripheralBaseImpl.m in Sources */,
+				1A4FA97C1AEB062200CE9CE0 /* Konashi+Grove.m in Sources */,
+				1A4FA92E1AEB05EC00CE9CE0 /* main.m in Sources */,
+				1A4FA9791AEB062200CE9CE0 /* CBUUID+Konashi.m in Sources */,
+				1A4FA9821AEB062200CE9CE0 /* Konashi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A4FA93D1AEB05EC00CE9CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4FA9481AEB05EC00CE9CE0 /* RobotCarControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A4FA9431AEB05EC00CE9CE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A4FA9271AEB05EC00CE9CE0 /* RobotCarController */;
+			targetProxy = 1A4FA9421AEB05EC00CE9CE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A4FA9351AEB05EC00CE9CE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A4FA9361AEB05EC00CE9CE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A4FA93A1AEB05EC00CE9CE0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A4FA93B1AEB05EC00CE9CE0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A4FA9491AEB05EC00CE9CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A4FA94A1AEB05EC00CE9CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A4FA94C1AEB05EC00CE9CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RobotCarController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1A4FA94D1AEB05EC00CE9CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RobotCarController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1A4FA94F1AEB05EC00CE9CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RobotCarControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobotCarController.app/RobotCarController";
+			};
+			name = Debug;
+		};
+		1A4FA9501AEB05EC00CE9CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RobotCarControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobotCarController.app/RobotCarController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A4FA9231AEB05EC00CE9CE0 /* Build configuration list for PBXProject "RobotCarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4FA9491AEB05EC00CE9CE0 /* Debug */,
+				1A4FA94A1AEB05EC00CE9CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A4FA94B1AEB05EC00CE9CE0 /* Build configuration list for PBXNativeTarget "RobotCarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4FA94C1AEB05EC00CE9CE0 /* Debug */,
+				1A4FA94D1AEB05EC00CE9CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A4FA94E1AEB05EC00CE9CE0 /* Build configuration list for PBXNativeTarget "RobotCarControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4FA94F1AEB05EC00CE9CE0 /* Debug */,
+				1A4FA9501AEB05EC00CE9CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A4FA9201AEB05EC00CE9CE0 /* Project object */;
+}

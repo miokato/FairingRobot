@@ -11,7 +11,9 @@ FairingRobot myRobot(2);
 
 void setup() {
     Serial.begin(9600);
-    myRobot.init(3,4,5,6);
+    myRobot.init();
+    myRobot.setMotorR(1,2);
+    myRobot.setMotorL(3,4);
 }
 
 void loop() {

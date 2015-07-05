@@ -8,9 +8,12 @@ class FairingRobot
     public:
 
         // コンストラクタ
-        FairingRobot(int somePin);
+        //FairingRobot();
         // 初期化
-        void init(const int lm1, const int lm2, const int rm1, const int rm2);
+        void init();
+        void setMotorR(const int rm1, const int rm2);
+        void setMotorL(const int lm1, const int lm2);
+        void setIrPin(const int somePin);
 
         // ロボット動作
         void goForward();           // 前進
@@ -20,7 +23,7 @@ class FairingRobot
         void stop();                // ストップ
         void brake();               // ブレーキ
         int  getIrValue(char num); // 指定した位置の赤外線信号を受信 
-        void showIrData();           // 赤外線信号をすべて表示
+        void showIrValue();           // 赤外線信号をすべて表示
 
     private:
 

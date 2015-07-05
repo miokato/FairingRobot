@@ -2,25 +2,13 @@
 #include "FairingRobot.h"
 
 // コンストラクタ (IRPIN, データポイント1, データポイント2)
-FairingRobot::FairingRobot (int somePin)
-{
-    pinMode(somePin, INPUT);
-    irPin = somePin;
-}
+//FairingRobot::FairingRobot ()
+//{
+//}
 
 // 初期化
-void FairingRobot::init(const int lmPin1, const int lmPin2, const int rmPin1, const int rmPin2)
+void FairingRobot::init()
 {
-    this->lmPin1 = lmPin1;
-    this->lmPin2 = lmPin2;
-    this->rmPin1 = rmPin1;
-    this->rmPin2 = rmPin2;
-
-    pinMode(this->lmPin1, OUTPUT);
-    pinMode(this->lmPin2, OUTPUT);  
-    pinMode(this->rmPin1, OUTPUT);
-    pinMode(this->rmPin2, OUTPUT);
-
     // モーターを逆転するときにstop()を入れるためのフラグ
     this->forwardFlag = 0;
     this->backFlag    = 0;
@@ -28,6 +16,31 @@ void FairingRobot::init(const int lmPin1, const int lmPin2, const int rmPin1, co
     this->leftFlag    = 0;
     this->stopFlag    = 0;
 }
+
+void FairingRobot::setIrPin(const int somePin)
+{
+    pinMode(somePin, INPUT);
+    irPin = somePin;
+}
+
+void FairingRobot::setMotorR(const int rmPin1, const int rmPin2)
+{
+    this->rmPin1 = rmPin1;
+    this->rmPin2 = rmPin2;
+
+    pinMode(this->rmPin1, OUTPUT);
+    pinMode(this->rmPin2, OUTPUT);
+}
+
+void FairingRobot::setMotorL(const int lmPin1, const int lmPin2)
+{
+    this->lmPin1 = lmPin1;
+    this->lmPin2 = lmPin2;
+
+    pinMode(this->lmPin1, OUTPUT);
+    pinMode(this->lmPin2, OUTPUT);
+}
+
 
 void FairingRobot::goForward()
 {
@@ -158,7 +171,7 @@ int FairingRobot::getIrValue(char somePoint) {
 }
 
 // 赤外線データを表示
-void FairingRobot::showIrData() {
+void FairingRobot::showIrValue() {
     int val = getIr();
     for(int i=0;i<val;i++) {
         Serial.print(this->IrData[i], BIN);

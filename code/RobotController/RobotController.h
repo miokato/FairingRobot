@@ -1,19 +1,14 @@
-#ifndef FairingRobot_h
-#define FairingRobot_h
+#ifndef RobotController_h
+#define RobotController_h
 #include "arduino.h"
 
 // IR Class
-class FairingRobot
+class RobotController
 {
     public:
-
-        // コンストラクタ
-        //FairingRobot();
-        // 初期化
-        void init();
-        void setMotorR(const int rm1, const int rm2);
-        void setMotorL(const int lm1, const int lm2);
-        void setIrPin(const int somePin);
+        RobotController();
+        void setIrPin(int irpin);
+        void setMotorPin(int rmpin1,int rmpin2,int lmpin1,int lmpin2);
 
         // ロボット動作
         void goForward();           // 前進

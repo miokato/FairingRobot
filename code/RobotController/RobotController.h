@@ -2,9 +2,13 @@
 #define RobotController_h
 #include "arduino.h"
 
+class OperateRobot {
+    public:
+        OperateRobot(int rmotor1, int rmotor2, int lmotor1, int lmotor2); 
+
+
 // IR Class
-class RobotController
-{
+class RobotController {
     public:
         RobotController();
         void setIrPin(int irpin);

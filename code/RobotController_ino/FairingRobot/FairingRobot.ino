@@ -1,41 +1,43 @@
-#include <FairingRobot.h>
+#include "RobotController.h"
 
-#define FORWARD xxx // ①
-#define BACK    xxx // ②
-#define RIGHT   xxx // ③
-#define LEFT    xxx // ④
-#define STOP    xxx // ⑤
+#define FORWARD 1
+#define BACK    2
+#define RIGHT   3
+#define LEFT    4
+#define STOP    5
 
-// myRobot(ピン番号)
-FairingRobot myRobot(2);
+// myrobot(ピン番号)
+RobotController myrobot;
 
 void setup() {
     Serial.begin(9600);
-    myRobot.init();
-    myRobot.setMotorR(1,2);
-    myRobot.setMotorL(3,4);
+    myrobot.setIrPin(2);
+    myrobot.setMotorPin(4,5,6,7);
+    analogWrite(3, 64); // ロボットの速度を指定 (0-255)
 }
 
 void loop() {
-  
-    int number = myRobot.getIrValue(xxx);
 
-    if(number){
-        switch(number) {
+    // myrobot.showIrValue();
+  
+    int value = myrobot.getIrValue(3);
+
+    if(value){
+        switch(value) {
             case FORWARD :
-                myRobot.goForward(); //① 前へ進む
+                myrobot.goForward(); //① 前へ進む
                 break;
             case BACK :
-                myRobot.goBack();    //② 後ろへ進む
+                myrobot.goBack();    //② 後ろへ進む
                 break;
             case RIGHT :
-                myRobot.turnRight(); //③ 右へ曲がる
+                myrobot.turnRight(); //③ 右へ曲がる
                 break;
             case LEFT :
-                myRobot.turnLeft();  //④ 左へ曲がる
+                myrobot.turnLeft();  //④ 左へ曲がる
                 break;
             case STOP :
-                myRobot.stop();       //⑤ 止める
+                myrobot.stop();       //⑤ 止める
                 break;
         }
     }

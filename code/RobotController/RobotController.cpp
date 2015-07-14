@@ -46,10 +46,10 @@ void RobotController::goForward()
     }
 
     // 前進
-    digitalWrite(lmPin1, HIGH);
-    digitalWrite(lmPin2, LOW);
-    digitalWrite(rmPin1, HIGH);
-    digitalWrite(rmPin2, LOW);
+    digitalWrite(lmPin1, LOW);
+    digitalWrite(lmPin2, HIGH);
+    digitalWrite(rmPin1, LOW);
+    digitalWrite(rmPin2, HIGH);
     Serial.println("Go forward");
     forwardFlag = 1;
     stopFlag = 0;
@@ -71,10 +71,10 @@ void RobotController::goBack()
     }
 
     // 後退
-    digitalWrite(lmPin1, LOW);
-    digitalWrite(lmPin2, HIGH);
-    digitalWrite(rmPin1, LOW);
-    digitalWrite(rmPin2, HIGH);
+    digitalWrite(lmPin1, HIGH);
+    digitalWrite(lmPin2, LOW);
+    digitalWrite(rmPin1, HIGH);
+    digitalWrite(rmPin2, LOW);
     Serial.println("Go back");
     backFlag = 1;
     stopFlag = 0;
@@ -96,8 +96,8 @@ void RobotController::turnRight()
     }
 
     // 右
-    digitalWrite(lmPin1, HIGH);
-    digitalWrite(lmPin2, LOW);
+    digitalWrite(lmPin1, LOW);
+    digitalWrite(lmPin2, HIGH);
     digitalWrite(rmPin1, LOW);
     digitalWrite(rmPin2, LOW);
     Serial.println("Turn right");
@@ -123,8 +123,8 @@ void RobotController::turnLeft()
     // 左
     digitalWrite(lmPin1, LOW);
     digitalWrite(lmPin2, LOW);
-    digitalWrite(rmPin1, HIGH);
-    digitalWrite(rmPin2, LOW);
+    digitalWrite(rmPin1, LOW);
+    digitalWrite(rmPin2, HIGH);
     Serial.println("Turn left");
     leftFlag = 1;
     stopFlag = 0;
